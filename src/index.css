@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    background: rgba(30, 30, 30, 0.55);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    /* text-align: center; */
+    color: white;
+    padding: 20ex 20ex 20ex 20ex;
+}
+
+.grid-cont {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    /* color: white; */
+    grid: 10px;
+    gap: 20px;
+    grid-template-areas: "a b";
+}
+
+.grid-sque {
+    padding: 30px;
+    width: 80%;
+    background: rgba(30, 30, 30, 0.55);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+html {
+    background-image: url('Muse.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#center {
+    display: grid;
+    text-align: center;
+    justify-items: center;
+}
+
+.flex-bubble {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-bubble>div {
+    background: rgba(255, 252, 252, 0.356);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (min-width: 320px) {
+    .container {
+        width: 100%;
+    }
+    .grid-sque {
+        width: 50%;
+    }
+    .flex-bubble {
+        flex-direction: column;
+    }
+    .flex-bubble>div {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 100%;
+    }
+    .grid-sque {
+        width: 80%;
+    }
+    .flex-bubble {
+        flex-direction: row;
+    }
+    .flex-bubble>div {
+        width: 80%;
+    }
+}
+
+p,
+li {
+    color: white;
+}
